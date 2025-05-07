@@ -1,6 +1,6 @@
 {
-  "name": "app_encuentas",
-  "homepage": "https://juanfelipemoreno.github.io/user-interfaces",
+  "name": "interfaces-usuario",
+  "homepage": "https://juanfelipemoreno.github.io/user-interfaces/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
