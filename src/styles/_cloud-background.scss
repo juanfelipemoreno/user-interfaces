@@ -1,0 +1,130 @@
+.cloud-background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to top, #87ceeb, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cloud {
+        position: absolute;
+        width: 150px;
+        opacity: 0.8;
+        z-index: 1;
+        animation: moveClouds 20s linear infinite, sizeClouds 5s ease-in-out infinite;
+        box-shadow: vars.$shadow;
+    }
+    
+    .cloud1 {
+        top: 17%;
+        left: 60px;
+        animation-delay: 0s;
+        z-index: 2;
+    }
+    
+    .cloud2 {
+        bottom: 0;
+        right: -60px;
+        width: 67%;
+        animation: sizeClouds 5s ease-in-out infinite;
+    }
+    
+    .cloud3 {
+        top: 40%;
+        right: 60px;
+        animation-delay: 0s;
+        width: 10%;
+    }
+
+    .cloud4 {
+        top: 36%;
+        left: 250px;
+        animation-delay: 0s;
+        width: 15%;
+    }
+
+    .cloud5 {
+        top: 0%;
+        right: -60px;
+        animation-delay: 0s;
+        width: 25%;
+    }
+
+    .cloud6 {
+        top: -15%;
+        left: -99px;
+        animation-delay: 0s;
+        width: 30%;
+        z-index: 3;
+        opacity: 0.3;
+    }
+    .cloud7 {
+        top: 68%;
+        left: -99px;
+        width: 32%;
+        z-index: 4;
+        opacity: 0.8;
+        animation: sizeClouds 5s ease-in-out infinite;
+    }
+    .cloud8 {
+        bottom: 0;
+        left: -150px;
+        width: 100%;
+        z-index: 3;
+        opacity: 0.4;
+        animation: sizeClouds 5s ease-in-out infinite;
+    }
+    .cloud9 {
+        top: 20%;
+        right: 310px;
+        animation-delay: 0s;
+        width: 20%;
+        z-index: 3;
+        opacity: 0.4;
+    }
+    .content {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@keyframes moveClouds {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+}
+
+@keyframes sizeClouds {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes sizeClouds2 {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(1.5);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
