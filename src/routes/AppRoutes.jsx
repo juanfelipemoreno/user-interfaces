@@ -12,7 +12,6 @@ export default function AppRoutes() {
                 <Route path="/" element={<WelcomeComp text = 'BIENVENIDOS'/>} />
                 <Route path="/Home" element={<Home/>}  />
                 <Route path="/Module/:id" element={<Module />}  />
-                <Route path="*" element={<div><h1>404 NOT FOUND</h1></div>} />
             </Routes>
         </BrowserRouter>
     )
